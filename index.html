@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant - My Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="dining, gourmet, cuisine, menu, chef, fine dining, casual dining, foodie, hospitality, culinary experience, reservation, ambiance, flavors, fresh ingredients, seasonal menu, signature dishes, fusion, global flavors, innovative cuisine, cross-cultural, modern twist, unique dishes, flavor pairing, international cuisine, creative menu, culinary blend, food innovation, exotic flavors, fusion food, bold combinations, global fusion, taste adventure">
+    <meta name="description" content="Step into a world where culinary boundaries blur with fusion cuisine at [Restaurant Name]. Experience innovative dishes blending flavors from Asia, Europe, Latin America, and beyond. Enjoy a stylish ambiance, creative menus, and bold taste adventures that redefine dining. Taste the unexpected!">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex flex-column align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mt-3 fs-5 fw-bold text-secondary text-center">
+                Cooking up your delicious experience...
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="#" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restaurant</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>    MIGHT WANT TO REUSE THIS
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="booking.html" class="btn btn-primary py-2 px-4">Reservation</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Cooking<br>your delicious experience</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">We create a welcoming dining experience where exceptional flavors, fresh ingredients, and warm hospitality come together to celebrate the joy of food and community.</p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Reservation</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>Master Chefs</h5>
+                                <p>We have the best 5 stars Chefs with years of experience and signature dishes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>Our meals are fresh, tasty and delicious from all fresh ingredients and well cooked</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Online Order</h5>
+                                <p>We have a fast delivery order and good online services with our area</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>24/7 Service</h5>
+                                <p>We are always at your service anytime you come in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.7s">
+                        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                        
+                            <!-- Carousel Items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/about-1.jpg" class="d-block w-100 img-fluid rounded" alt="About Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/about-2.jpg" class="d-block w-100 img-fluid rounded" alt="About Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/about-3.jpg" class="d-block w-100 img-fluid rounded" alt="About Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/about-4.jpg" class="d-block w-100 img-fluid rounded" alt="About Image 4">
+                                </div>
+                            </div>
+                        
+                            <!-- Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restaurant</h1>
+                        <p class="mb-4">Our restaurant offers a warm, inviting atmosphere with delicious dishes made from the freshest ingredients. We take pride in crafting meals that are both flavorful and beautifully presented, making every visit special.</p>
+                        <p class="mb-4">With a focus on excellent service and hospitality, our friendly staff ensures you feel at home. Enjoy a memorable dining experience with our signature dishes and seasonal specials.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">5</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-1 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Menu Start -->
+        <section class="container-xxl py-5">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                
+                <div class="row wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- Tab Menu -->
+                    <nav class="col-lg-3 col-md-4" aria-label="Food Categories">
+                        <ul class="nav nav-pills flex-column border-end">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center text-start" data-bs-toggle="pill" href="#tab-1" aria-controls="tab-1">
+                                    <i class="fa fa-coffee fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <small class="text-body">Popular</small>
+                                        <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center text-start" data-bs-toggle="pill" href="#tab-2" aria-controls="tab-2">
+                                    <i class="fa fa-hamburger fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <small class="text-body">Special</small>
+                                        <h6 class="mt-n1 mb-0">Lunch</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center text-start" data-bs-toggle="pill" href="#tab-3" aria-controls="tab-3">
+                                    <i class="fa fa-utensils fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <small class="text-body">Lovely</small>
+                                        <h6 class="mt-n1 mb-0">Dinner</h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <!-- Tab Content -->
+                    <div class="col-lg-9 col-md-8">
+                        <div class="tab-content">
+                            <!-- Breakfast Tab -->
+                            <div id="tab-1" class="tab-pane fade show" role="tabpanel" aria-labelledby="tab-1">
+                                <div class="row g-4">
+                                    <!-- Menu Item -->
+                                    <article class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="Chicken Burger" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- Additional Menu Items ... Repeat for other items -->
+                                </div>
+                            </div>
+                            
+                            <!-- Lunch Tab -->
+                            <div id="tab-2" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-2">
+                                <div class="row g-4">
+                                    <!-- Menu Items -->
+                                    <article class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="Chicken Burger" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- Additional Menu Items ... Repeat for other items -->
+                                </div>
+                            </div>
+        
+                            <!-- Dinner Tab -->
+                            <div id="tab-3" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-3">
+                                <div class="row g-4">
+                                    <!-- Menu Items -->
+                                    <article class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="Chicken Burger" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- Additional Menu Items ... Repeat for other items -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View More Button -->
+                <div class="d-flex justify-content-center w-100">
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="menu.html" role="button" aria-label="View more food items">View More</a>
+                </div>
+            </div>
+        </section>
+        <!-- Menu End -->
+
+
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-5 p-5 align-items-center wow fadeInLeft">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/about-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/about-4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/menu-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="img wow fadeInLeft" data-wow-delay="0.7s">
+                        <img src="img/video.jpg" alt="">
+                    </div>                  MIGHT WANT TO REUSE THIS
+                    <!-- <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div> -->
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h1 class="text-white mb-4">Book A Table Online</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                          <option value="1">People 1</option>
+                                          <option value="2">People 2</option>
+                                          <option value="3">People 3</option>
+                                        </select>
+                                        <label for="select1">No Of People</label>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <!-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">    MIGHT WANT TO REUSE THIS
+                        <!-- 16:9 aspect ratio 
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- Reservation End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3 wow fadeInUp">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Top Chefs</h5>
+                    <h3 class="mb-5">We have the best chefs for all dish of your desire</h1>
+                </div>
+                <div class="row team-container" id="teamContainer">
+                    <!-- Carousel Section -->
+                    <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                        <div id="teamCarousel" class="carousel slide p-5 wow fadeInLeft"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Team Members -->
+                                <div class="carousel-item active" data-name="John Doe" data-role="Head Chef"
+                                    data-description="John is a skilled software engineer with 5 years of experience working on cutting-edge technologies. He specializes in full-stack development."
+                                    data-contact="john.doe@example.com" data-image="img/team-1.jpg">
+                                    <img src="img/team-1.jpg" class="d-block mx-auto rounded-circle" alt="John Doe"
+                                        style="width: 150px; height: 150px;">
+                                    <h5 class="mt-3">John Doe</h5>
+                                    <p class="text-muted">Head Chef</p>
+                                </div>
+                                <div class="carousel-item" data-name="Jane Smith" data-role="Chef 1"
+                                    data-description="Jane brings creativity and innovation to every dish she prepares. Her culinary expertise is unmatched."
+                                    data-contact="jane.smith@example.com" data-image="img/team-2.jpg">
+                                    <img src="img/team-2.jpg" class="d-block mx-auto rounded-circle" alt="Jane Smith"
+                                        style="width: 150px; height: 150px;">
+                                    <h5 class="mt-3">Jane Smith</h5>
+                                    <p class="text-muted">Chef 1</p>
+                                </div>
+                                <div class="carousel-item" data-name="Emily Johnson" data-role="Chef 2"
+                                    data-description="Emily specializes in pastry and desserts, making her an invaluable asset to the team."
+                                    data-contact="emily.johnson@example.com" data-image="img/team-3.jpg">
+                                    <img src="img/team-3.jpg" class="d-block mx-auto rounded-circle" alt="Emily Johnson"
+                                        style="width: 150px; height: 150px;">
+                                    <h5 class="mt-3">Emily Johnson</h5>
+                                    <p class="text-muted">Chef 2</p>
+                                </div>
+                                <div class="carousel-item" data-name="Michael Brown" data-role="Chef 3"
+                                    data-description="Michael is known for his mastery in international cuisines and his dedication to quality."
+                                    data-contact="michael.brown@example.com" data-image="img/team-4.jpg">
+                                    <img src="img/team-4.jpg" class="d-block mx-auto rounded-circle" alt="Michael Brown"
+                                        style="width: 150px; height: 150px;">
+                                    <h5 class="mt-3">Michael Brown</h5>
+                                    <p class="text-muted">Chef 3</p>
+                                </div>
+                            </div>
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%) brightness(0%);"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%) brightness(0%);"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Details Section -->
+                    <div class="col-12 col-md-6 team-details text-center text-md-start p-3"
+                        style="background: rgba(122, 106, 106, 0.8); backdrop-filter: blur(10px); border-radius: 5%;">
+                        <img id="profileImage" src="img/team-1.jpg" class="img-fluid rounded-circle mb-3" alt="Profile Image"
+                            style="width: 150px; height: 150px;">
+                        <h3 id="profileName">John Doe</h3>
+                        <p id="profileRole" class="text-muted">Head Chef</p>
+                        <p id="profileDescription">
+                            John is a skilled culinary chef with many years of experience and with many awards and recognition. He can cook
+                            any taste you desire.
+                        </p>
+                        <p><strong>Contact:</strong> <span id="profileContact">john.doe@example.com</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4 wow fadeInUp" data-wow-delay="0.7s">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Our Service</a>
+                        <a class="btn btn-link" href="">Our Menu</a>
+                        <a class="btn btn-link" href="">Make Reservation</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>25,Our main off avenue, Lagos</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 810 769 4432 </p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myweb.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>08AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Subscribe to our Newsletter get latest information about us.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer border-top pt-3 text-center">
+                    <p class="mb-0">
+                        &copy; <a class="text-decoration-none text-light" href="#">Akinola</a>, All Rights Reserved.
+                        Designed By <a class="text-decoration-none text-light" href="https://akinolacodes.com">AkinolaCodes</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="" class="btn btn-primary btn-lg-square back-to-top position-fixed bottom-0 end-0 m-3">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
