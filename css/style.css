@@ -190,9 +190,59 @@ html {
 }
 
 /*** Food Menu ***/
-.nav-pills .nav-item .active {
+.menu-img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.menu-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nav-pills .nav-link {
+    border: none;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.nav-pills .nav-link.active {
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+}
+
+.nav-pills .nav-link:hover {
+    color: #0d6efd;
+}
+
+.image-container:hover .hover-content {
+    opacity: 1 !important;
+}
+
+/* .section-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+} */
+/* .nav-pills .nav-item .active {
     border-bottom: 2px solid var(--primary);
 }
+
+.menu-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+}
+
+.menu-item .price {
+    font-size: 1.1rem;
+} */
+
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item,
